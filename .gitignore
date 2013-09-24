@@ -20,4 +20,5 @@ TestResults
 *.sdf
 *.suo
 *.filters
+*.vsp
 ipch
