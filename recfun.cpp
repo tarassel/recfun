@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "pascal.h"
 #include "parentheses.h"
+#include "countchange.h"
 #include <iostream>
 //A   #include <string>
 #include <iterator>
@@ -13,6 +14,19 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	// CountChange
+	std::vector<int> coins;
+
+	int coi1[3] = {4, 1, 2};
+	coins.assign(coi1, coi1 + 3);
+	countChange(4, coins) == 4;
+
+	int coi4[7] = {500,5,50,100,20,200,10};
+	coins.assign(coi4, coi4 + 7);
+	countChange(300, coins) == 1022;
+
+
+
 //	for (int i=0;i<1000000;++i)
 //		pascal(3,11);
 //	if (pascal(3,11) == 165)
